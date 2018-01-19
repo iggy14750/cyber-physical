@@ -17,7 +17,8 @@ Top:                    ; Our read loop.
     LDRB R3, [R1]       ; Read the state of the buttons.
     LSR  R3, R3, #1     ; Set-up for next inst
     AND  R4, R3, #1     ; R4 is the state of button 2
-    LSR  R3, R3, #3     ; R3 is the state of button 1
+    LSR  R3, R3, #3     ; Get the bit we need in last position.
+    AND  R3, R3, #1     ; R3 is the state of button 1
 
     ORR  R5, R3, R4     ; BLUE = not (b1 or b2), still need 'not'.
     EOR  R5, R5, #1     ; BLUE = not (b1 or b2), here we invert that bit.
