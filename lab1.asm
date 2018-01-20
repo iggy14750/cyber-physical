@@ -19,7 +19,7 @@ main: .asmfunc
     mov  R2, #0x12      ; Pins 4 and 1 for the switches.
     strb R2, [R1, #6]   ; Resistor enable for switches.
 
-    mov  R2, #7  		; Pins 0,1,2 for the LEDs.
+    mov  R2, #7         ; Pins 0,1,2 for the LEDs.
     strb R2, [R1, #5]   ; Direction for LEDs.
     strb R2, [R1, #7]   ; Resistor enable for LEDs.
 
@@ -44,6 +44,6 @@ Top:                    ; Our read loop.
 
     STRB R5, [R1, #3]   ; Write our calculations to LEDs.
 
-    B Top
+    B Top               ; Start our read loop all over again.
 
 .end
