@@ -19,19 +19,15 @@ void Initialize_Port2(void)
     P2REN  = P2_BITS;
 }
 
-
 uint8_t Read_Port1(void)
 {
     return P1IN;
 }
 
-
-
 void Write_Port2(uint8_t value)
 {
     P2OUT = value;
 }
-
 
 int main(void)
 {
