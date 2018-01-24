@@ -1,1 +1,5 @@
 misc
+msp_compatibility.h
+core_cm4.h
+cmsis_compiler.h
+cmsis_gcc.h
