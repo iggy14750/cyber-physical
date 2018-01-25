@@ -45,6 +45,8 @@ void Write_Port2(uint8_t value)
 
 int main(void)
 {
+    Initialize_Port1();
+    Initialize_Port2();
     while (1)
     {
         Write_Port2(convert_button_to_LED(Read_Port1()));
