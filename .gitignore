@@ -1,4 +1,5 @@
 misc
+bin
 msp_compatibility.h
 core_cm4.h
 cmsis_compiler.h
