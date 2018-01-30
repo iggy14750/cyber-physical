@@ -23,7 +23,7 @@
 
 #include <stdint.h>
 #include "ClockSystem.h"
-#include "..\inc\msp432p401r.h"
+#include "msp432p401r.h"
 
 //------------Clock_Init------------
 // Configure for SMCLK = MCLK = speed, ACLK = REFOCLK.
